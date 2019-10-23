@@ -1,0 +1,14 @@
+problem: #Flexible Modeling#
+// Your problem frame descriptions goes here
+Requirement R "Make the modeling flexible"
+World P "Models"
+Machine M "Modeling wiki"
+Machine -- World {
+  event SharedPhenomenon
+} "a"
+World ~~ Requirement {
+  state ReferredPhenomenon
+} "b"
+Machine <~ Requirement {
+  state ConstrainedPhenomenon
+} "c"

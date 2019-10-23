@@ -1,0 +1,10 @@
+problem: #The Sluice Gate Problem#
+IC -- G {event Clockw, event Anti, event On, event Off} "a" 
+G -- IC {event Top, event Bottom} "a" 
+G <~ OC {state Open, state Shut} "b" 
+IC -- O {event Raise, event Lower, event Stop} "c" 
+O ~~ OC {event Raise, event Lower, event Stop} "c" 
+OC "Obey the Command"
+O B "Operator"
+G C "Gate"
+IC M "Interactive Controller"

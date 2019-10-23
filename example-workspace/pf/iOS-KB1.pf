@@ -1,0 +1,78 @@
+problem: #KB1#
+
+iOS--Data
+
+iOS--AES
+
+AES--Pass
+
+Owner--Pass
+
+AES--Device
+
+Device--Attacker
+
+Device~~DA1
+
+iOS~~DA1
+
+Device~~DA2
+
+AES~~DA2
+
+AES~~DA3
+
+Pass~~DA4
+Owner~~DA4
+Data~~DA5
+
+Device~~DA5
+
+AES~~DA5
+
+DA1->SR1
+
+DA2->SR1
+
+SR2->SR1
+
+DA3->SR2
+
+DA4->SR2
+
+DA5->SR2
+
+iOS M "iPhone/iPad Operating System"
+
+Device D "iPhone/iPad Device"
+
+Owner B "Authoerised User"
+
+Attacker B "Unauthoerised User"
+
+Pass X "Passcode"
+
+Data X "Data stored on device"
+
+AES D "AES-256 algorithm" { event Encrypt , event Decrypt }
+
+SR1 "Data stored on an iPhone/iPad device is
+secure even if it is lost"
+
+DA1 "iPhone/iPad uses the iOS (4.2.1)"
+
+DA2 "iOS devices are protected by the AES-256
+algorithm"
+
+SR2 "data on iOS devices are not accessible by
+unauthorised users"
+
+DA3 "AES-256 is a strong encryption
+algorithm"
+
+DA4 "users provide strong passcode
+(256 bits)"
+
+DA5 "data on device cannot be accessed if
+the device is locked by the AES-256 strength
+encryption"

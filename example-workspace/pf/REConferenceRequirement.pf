@@ -1,0 +1,14 @@
+problem: #An Example Problem#
+// Your problem frame descriptions goes here
+Requirement R "Description of a requirement"
+World P "Description of a domain"
+Machine M "Description of a Machine"
+Machine -- World {
+  event SharedPhenomenon
+} "a"
+World ~~ Requirement {
+  state ReferredPhenomenon
+} "b"
+Machine <~ Requirement {
+  state ConstrainedPhenomenon
+} "c"

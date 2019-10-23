@@ -1,0 +1,13 @@
+problem: #Haley Problem Diagram Figure 4#
+
+Requirement R "Provide HR data requested by user - Only to HR staff"
+
+World P "User"
+
+Machine M "Personal Information Machine + HR Data"
+
+Machine -- World {event "U1persNumber", event "M1persData"} "a"
+
+World ~~ Requirement "b"
+
+Machine <~ Requirement "c"

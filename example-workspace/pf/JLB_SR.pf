@@ -1,0 +1,24 @@
+problem: JLB_SR
+
+SR "The doors of meeting rooms should 
+be accessible by the attending participants 
+only during the meeting"
+
+DR M "Door"
+MR X "Meeting Room"
+MT D "Meeting"
+AP B "Attending Participants"
+
+DR--MR
+
+MT--MR
+
+MT--AP
+
+AP--MR
+
+MR~~SR
+
+DR~>SR
+
+AP~~SR

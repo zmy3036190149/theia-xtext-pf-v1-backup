@@ -1,0 +1,9 @@
+problem: TrafficControl
+CT R "Control the traffic    "
+TC B "Traffic Controller   "
+AS X "Arrival Sequence    "
+SM M "Sequence Manager    "
+SM -- AS "a"
+SM -- TC { event Manage } "b" 
+TC <~ CT { state Managed} "c"
+AS ~~ CT {state Inputed} "d"

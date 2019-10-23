@@ -1,0 +1,25 @@
+problem: AMANBefore 
+
+AB -- LA  "a"
+
+AB -- LB  "b"
+
+LB ~~ Sec  "c"
+
+LA ~> Sec  "d"
+
+AB M
+"AMAN 
+Before"
+
+Sec R // requirement
+"Protection of 
+FDD info"
+
+LB C 
+"Legacy 
+System B"
+
+LA C
+"Legacy 
+Systen A"
